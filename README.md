@@ -10,6 +10,8 @@ https://github.com/user-attachments/assets/demo_workflow_viewer.mp4
 
 ## 🚀 The LLM Era Value Proposition
 
+https://github.com/user-attachments/assets/demo_workflow_viewer.mp4
+
 | Era | Trust Model | Technology Layer | Efficacy |
 |-----|-------------|------------------|----------|
 | **LLM Hype (2024)** | Vibes & Prompts | System Prompts ("You are a secure AI") | Vibes fail in prod. |
