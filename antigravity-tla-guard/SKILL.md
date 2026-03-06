@@ -5,8 +5,6 @@ description: Implements formal mathematical verification (TLA+) for Python AI ag
 
 # Antigravity TLA+ Verification Guard
 
-https://github.com/user-attachments/assets/demo_workflow_viewer.mp4
-
 # Instructions
 
 You are equipped to help developers add formal mathematical verification (based on TLA+ concepts) to their AI agent workflows. This ensures a zero-bug guarantee for state transitions and prevents dangerous LLM hallucinations from executing in production.
