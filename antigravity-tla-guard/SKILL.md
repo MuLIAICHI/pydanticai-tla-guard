@@ -1,6 +1,6 @@
 ---
 name: antigravity-tla-guard
-description: Implements formal mathematical verification (TLA+) for Python AI agents. Use when generating agent code (like PydanticAI or LangGraph), or when user asks to "add TLA+ verification", "make the agent safe", "prevent hallucinations", or "implement antigravity guardrails".
+description: "Implements formal mathematical verification for Python AI agents. Use when generating agent code like PydanticAI or LangGraph, or when user asks to add TLA+ verification, make the agent safe, prevent hallucinations, or implement antigravity guardrails."
 ---
 
 # Antigravity TLA+ Verification Guard
@@ -30,7 +30,7 @@ When asked to implement this pattern, use the following standard Python file con
 ```python
 from typing import Dict, List
 
-def generate_tla_spec(state: dict) -> str:
+def generate_tla_spec(state: dict):
     """
     Generates a TLA+ specification string from the current agent state.
     Used for formal verification before critical transitions.
@@ -51,7 +51,7 @@ def generate_tla_spec(state: dict) -> str:
 VARIABLES messages, artifacts, step, pc
 
 Init == 
-    /\ messages = <<>>
+    /\ messages = []
     /\ artifacts = {{{artifacts_str}}}
     /\ step = {state.get('step', 0)}
     /\ pc = "{state.get('pc', 'plan')}"
@@ -62,11 +62,11 @@ Next ==
     \/ pc = "test" /\ pc' = "deploy"
 
 Invariant_NoDeployUntested == 
-    [](pc = "deploy" => "test_report" \in artifacts)
+    [](pc = "deploy" implies "test_report" \in artifacts)
 ====
 """
 
-def tla_verify(state_dict: dict, next_pc: str) -> bool:
+def tla_verify(state_dict: dict, next_pc: str):
     """
     Stub function simulating a TLA+ model checker (`tlc`).
     Verifies that transitioning to `next_pc` does not violate safety invariants.

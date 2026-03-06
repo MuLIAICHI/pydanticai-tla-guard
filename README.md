@@ -4,6 +4,10 @@ An autonomous dev agent mimicking Google's Antigravity core. Built with Pydantic
 
 > **"If we want AI agents writing enterprise software in 2026, formal mathematical verification isn't a luxury; it’s the only path forward."**
 
+https://github.com/user-attachments/assets/demo_workflow_viewer.mp4
+
+<p align="center"><i>▲ Interactive Workflow Viewer — Safe mode vs Buggy mode (TLA+ catches the hallucination)</i></p>
+
 ## 🚀 The LLM Era Value Proposition
 
 | Era | Trust Model | Technology Layer | Efficacy |
