@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pydanticai-tla"
-version = "0.1.0"
+version = "0.1.1"
 description = "Formal mathematical verification (TLA+) guardrails for PydanticAI agents."
 readme = "README.md"
 authors = [
